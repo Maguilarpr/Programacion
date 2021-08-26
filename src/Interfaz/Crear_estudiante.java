@@ -62,6 +62,12 @@ public class Crear_estudiante extends javax.swing.JFrame {
             }
         });
 
+        txtDocumento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDocumentoActionPerformed(evt);
+            }
+        });
+
         jLabel4.setBackground(new java.awt.Color(0, 0, 0));
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Curso:");
@@ -155,17 +161,22 @@ public class Crear_estudiante extends javax.swing.JFrame {
             LogicaPrograma.agregar_estudiante(nuevo);
             JOptionPane.showMessageDialog(null, "Usuario creado");
         }else{
-            JOptionPane.showMessageDialog(null, "Campos incompletos");
+            JOptionPane.showMessageDialog(null, "Llene todos los campos");
         }
     }//GEN-LAST:event_btn_CrearActionPerformed
 
     private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
+
+    }//GEN-LAST:event_txtNombreActionPerformed
+
+    private void txtDocumentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDocumentoActionPerformed
+               
         if (txtNombre.getText().length()==10){
             
         }else {
             JOptionPane.showMessageDialog(rootPane, "Documento invalido");
         }
-    }//GEN-LAST:event_txtNombreActionPerformed
+    }//GEN-LAST:event_txtDocumentoActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

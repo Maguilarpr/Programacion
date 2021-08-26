@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Alumno extends Persona implements Serializable{
 
-    private String Curso;
+    private String curso;
 
     public Alumno(){}
 
@@ -25,11 +25,11 @@ public class Alumno extends Persona implements Serializable{
     }
       
     public String getCurso() {
-        return Curso;
+        return curso;
     }
 
     public void setCurso(String Curso) {
-        this.Curso = Curso;
+        this.curso = Curso;
     }
 
     @Override

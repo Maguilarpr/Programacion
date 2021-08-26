@@ -12,7 +12,7 @@ public class Guardar_profesor {
         File crear_ubicacion = new File(ubicacion);
         try {
             crear_ubicacion.mkdirs();// Crear ubicacion
-            FileOutputStream fileStrem = new FileOutputStream(ubicacion + prof.getDocumento() + ".txt");
+            FileOutputStream fileStrem = new FileOutputStream(ubicacion + prof.getDocumento() + ".obj");
             ObjectOutputStream os = new ObjectOutputStream(fileStrem);
             os.writeObject(prof);
             os.close();
